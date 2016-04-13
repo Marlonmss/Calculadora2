@@ -11,9 +11,14 @@ public class Cientifica extends Calculadora {
 	public void truncar(){}
 	public boolean ligar(){}
 	public boolean desligar(){}
+	public double dividir(double numerador, double denominador)
+	{
+		return dividendo = numerador/denominador;
+	}
     
 	private double valor_seno;
 	private double valor_cosseno;
 	private double valor_tangente;
+	private double dividendo;
 	private boolean power;
 }

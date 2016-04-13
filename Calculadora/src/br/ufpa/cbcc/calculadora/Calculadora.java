@@ -1,6 +1,6 @@
 package br.ufpa.cbcc.calculadora;
 
-public abstract class Calculadora extends Dispositivo {
+public abstract class Calculadora extends Dispositivo implements Dividir {
 	public Calculadora(){}
 	public Calculadora(double aa, double bb, double cc){}
 	public Calculadora(Calculadora co){}
@@ -20,10 +20,20 @@ public abstract class Calculadora extends Dispositivo {
 	public void adicionarPonto(Ponto pont){}
 	public Calculadora operator=(Calculadora co){}
 	public abstract void truncar();
+	public int dividir(int numerador, int denominador)
+	{
+		return variavel_d = numerador/denominador;
+	}
+	
+	public int calcRestoDivisao(int quociente, int divisor)
+	{
+		return variavel_d = quociente % divisor;
+	}
 	
 	protected double variavel_a;
 	protected double variavel_b;
 	protected double variavel_c;
+	protected int variavel_d;
 	protected Ponto alpha;
 	protected Ponto gama;
 	protected Ponto delta;
