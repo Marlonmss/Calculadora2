@@ -4,8 +4,8 @@ INDEX VERSION 1.127+C:\Users\Alguem\git\Calculadora2\.metadata\.plugins\org.ecli
 2442888519.index
 4078855296.index
 3887496914.index
-1851955243.index
 2449793579.index
+1851955243.index
 1677593041.index
 152244849.index
 1650449417.index
