@@ -10,8 +10,18 @@ public class Financeira extends Calculadora{
 	public void truncar(){}
 	public boolean ligar(){}
 	public boolean desligar(){}
+	public int dividir(int numerador, int denominador)
+	{
+		return dividendo = numerador/denominador;
+	}
+	public int calcRestoDivisao(int quociente, int divisor)
+	{
+		return resto = quociente % divisor;
+	}
 	
 	protected double valor_simples;
 	protected double valor_composto;
+	protected int dividendo;
+	protected int resto;
 	protected boolean power;
 }

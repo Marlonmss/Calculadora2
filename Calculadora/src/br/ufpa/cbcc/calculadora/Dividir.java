@@ -5,3 +5,5 @@ public interface Dividir {
 	public int dividir(int numerador, int denominador);
 	public int calcRestoDivisao(int quociente, int divisor);
 }
+
+//////////////////////////////

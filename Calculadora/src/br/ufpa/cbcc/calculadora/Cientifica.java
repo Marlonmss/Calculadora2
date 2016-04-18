@@ -15,10 +15,15 @@ public class Cientifica extends Calculadora {
 	{
 		return dividendo = numerador/denominador;
 	}
+	public int calcRestoDivisao(int quociente, int divisor)
+	{
+		return resto = quociente % divisor;
+	}
     
 	private double valor_seno;
 	private double valor_cosseno;
 	private double valor_tangente;
 	private double dividendo;
+	private int resto;
 	private boolean power;
 }
