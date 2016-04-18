@@ -1,6 +1,6 @@
 package br.ufpa.cbcc.calculadora;
 
-public abstract class Calculadora extends Dispositivo implements Dividir {
+public abstract class Calculadora extends Dispositivo implements Dividir, CalculoInf {
 	public Calculadora(){}
 	public Calculadora(double aa, double bb, double cc){}
 	public Calculadora(Calculadora co){}
