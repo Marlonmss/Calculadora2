@@ -1,6 +1,6 @@
 package br.ufpa.cbcc.calculadora;
 
-public abstract class Calculadora extends Dispositivo implements Dividir, CalculoInf {
+public abstract class Calculadora extends Dispositivo implements Dividir {
 	public Calculadora(){
 		this.memo = new Memoria();
 		this.variavel_a = 0;

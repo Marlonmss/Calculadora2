@@ -70,6 +70,10 @@ public class Financeira extends Calculadora{
 		dividendo = numerador/denominador;
 		return dividendo;
 	}
+	public double dividir(double numerador, double denominador){
+		dividendo = (int)(numerador/denominador);
+		return dividendo;
+	}
 	public int calcRestoDivisao(int quociente, int divisor)
 	{
 		resto = quociente % divisor;

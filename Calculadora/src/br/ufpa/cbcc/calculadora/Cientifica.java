@@ -1,6 +1,6 @@
 package br.ufpa.cbcc.calculadora;
 
-public class Cientifica extends Calculadora{
+public class Cientifica extends Calculadora implements CalculoInf{
 	public Cientifica(){
 		this.valor_seno = 0;
 		this.valor_cosseno = 0;
