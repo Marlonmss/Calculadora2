@@ -73,12 +73,26 @@ public class Cientifica extends Calculadora implements CalculoInf{
 	}
 	public double dividir(double numerador, double denominador)
 	{
-		dividendo = numerador/denominador;
+		try
+		{
+			dividendo = numerador/denominador;
+		}
+		catch(ArithmeticException e)
+		{
+			System.out.println ("Erro: um número não pode ser dividido por zero.");
+		}
 		return dividendo;
 	}
 	public int calcRestoDivisao(int quociente, int divisor)
 	{
-		resto = quociente % divisor;
+		try
+		{
+			resto = quociente % divisor;
+		}
+		catch(ArithmeticException e)
+		{
+			System.out.println ("Erro: um número não pode ser dividido por zero.");
+		}
 		return resto;
 	}
 	public double derivada(double const_a, double const_b, double const_c, double ponto_x)

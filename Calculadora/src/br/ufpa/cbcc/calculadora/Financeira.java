@@ -67,16 +67,37 @@ public class Financeira extends Calculadora{
 	}
 	public int dividir(int numerador, int denominador)
 	{
-		dividendo = numerador/denominador;
+		try
+		{
+			dividendo = numerador/denominador;
+		}
+		catch(ArithmeticException e)
+		{
+			System.out.println ("Erro: um número não pode ser dividido por zero.");
+		}
 		return dividendo;
 	}
 	public double dividir(double numerador, double denominador){
-		dividendo = (int)(numerador/denominador);
+		try
+		{
+			dividendo = (int)(numerador/denominador);
+		}
+		catch(ArithmeticException e)
+		{
+			System.out.println ("Erro: um número não pode ser dividido por zero.");
+		}
 		return dividendo;
 	}
 	public int calcRestoDivisao(int quociente, int divisor)
 	{
-		resto = quociente % divisor;
+		try
+		{
+			resto = quociente % divisor;
+		}
+		catch(ArithmeticException e)
+		{
+			System.out.println ("Erro: um número não pode ser dividido por zero.");
+		}
 		return resto;
 	}
 	

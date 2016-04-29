@@ -49,10 +49,36 @@ public class Ponto {
 		return new Ponto(x*n,y*n,z*n,t*n,u*n);
 	}
 	public Ponto dividirPontos(Ponto B){
-		return new Ponto(x/B.x,y/B.y,z/B.z,t/B.t,u/B.u);
+		Ponto b = new Ponto();
+		try
+		{
+			b.x = x/B.x;
+			b.y = y/B.y;
+			b.z = z/B.z;
+			b.t = t/B.t;
+			b.u = u/B.u;
+		}
+		catch(ArithmeticException e)
+		{
+			System.out.println ("Erro: um número não pode ser dividido por zero.");
+		}
+		return b;
 	}
 	public Ponto dividirPontos(double n){
-		return new Ponto(x/n,y/n,z/n,t/n,u/n);
+		Ponto b = new Ponto();
+		try
+		{
+			b.x = x/n;
+			b.y = y/n;
+			b.z = z/n;
+			b.t = t/n;
+			b.u = u/n;
+		}
+		catch(ArithmeticException e)
+		{
+			System.out.println ("Erro: um número não pode ser dividido por zero.");
+		}
+		return b;
 	}
 	public boolean verificarIgualdade(Ponto B){
 		if(x==B.x && y==B.y && z==B.z && t==B.t && u==B.u)
