@@ -37,7 +37,7 @@ public abstract class Calculadora extends Dispositivo implements Dividir {
 			lista[i] = co.lista[i];
 	}
 	public Calculadora(int dia, int mes, int ano){
-		this.ligou = new Data(dia,mes,ano);
+		this.liga = new Data(dia,mes,ano);
 	}
 	public void atribuir(Calculadora co){
 		variavel_a = co.variavel_a;
@@ -59,7 +59,7 @@ public abstract class Calculadora extends Dispositivo implements Dividir {
 		delta.imprimir();
 	}
 	public void imprimirData(){
-		ligou.print();
+		liga.print();
 	}
 	public void imprimirTudo(){
 		imprimir();
@@ -139,5 +139,5 @@ public abstract class Calculadora extends Dispositivo implements Dividir {
 	
 	private static String easter_egg;
 	private static double beta = 1.6646234298426847;
-	private Data ligou;
+	private Data liga;
 }
