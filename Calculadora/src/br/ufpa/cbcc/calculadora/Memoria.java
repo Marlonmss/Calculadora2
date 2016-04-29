@@ -6,6 +6,11 @@ public class Memoria {
 		this.reg2 = 0;
 		this.reg3 = 0;
 	}
+	public Memoria(Memoria co){
+		reg1 = co.reg1;
+		reg2 = co.reg2;
+		reg3 = co.reg3;
+	}
 	public void memorizar(double a, double b, double c){
 		this.reg1 = a;
 		this.reg2 = b;

@@ -15,6 +15,13 @@ public class Ponto {
 		this.t = t;
 		this.u = u;
 	}
+	public Ponto(Ponto B){
+		this.x = B.x;
+		this.y = B.y;
+		this.z = B.z;
+		this.t = B.t;
+		this.u = B.u;
+	}
 
 	public double calcModulo(){
 		return Math.sqrt(x*x+y*y+z*z+t*t+u*u);
