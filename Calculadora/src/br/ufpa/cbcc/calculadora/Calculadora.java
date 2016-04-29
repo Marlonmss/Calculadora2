@@ -85,8 +85,16 @@ public abstract class Calculadora extends Dispositivo implements Dividir {
 	public static void divertir(String meme){
 		System.out.println('\n'+meme+easter_egg+'\n');
 	}
-	public void operarPontos(){ // verificar depois
-		
+	public void operarPontos(){
+		alpha.somarPontos(variavel_a);
+		alpha.somarPontos(variavel_b);
+		alpha.somarPontos(variavel_c);
+		gama.somarPontos(variavel_a);
+		gama.somarPontos(variavel_b);
+		gama.somarPontos(variavel_c);
+		delta.somarPontos(variavel_a);
+		delta.somarPontos(variavel_b);
+		delta.somarPontos(variavel_c);
 	}
 	public void guardarAntigos(){
 		memo.memorizar(variavel_a, variavel_b, variavel_c);
